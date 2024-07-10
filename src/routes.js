@@ -1,10 +1,10 @@
 const { Router } = require("express");
-const DataController = require('./controllers/DataController');
+const DailyController = require('./controllers/DailyController');
 
 const routes = Router();
 
 // Rotas do CRUD
-routes.post('/store_data', DataController.store);
-routes.get('/get_data', DataController.index);
+routes.post('/daily', DailyController.store);
+routes.get('/daily', DailyController.index);
 
 module.exports = routes;

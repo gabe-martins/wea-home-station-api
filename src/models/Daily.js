@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const DataSchema = new mongoose.Schema({
+const DailySchema = new mongoose.Schema({
   temperature: Number, 
   humidity: Number,
   date_time: String
@@ -8,4 +8,4 @@ const DataSchema = new mongoose.Schema({
   timestamps: true,
 })
 
-module.exports = mongoose.model("Data", DataSchema);
+module.exports = mongoose.model("Daily", DailySchema);
