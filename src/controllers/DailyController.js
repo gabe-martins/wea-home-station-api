@@ -20,7 +20,7 @@ module.exports = {
       date_time
     })
 
-    return res.json(dados);
+    return res.status(200).send("Saved!")
   },
 
   async index(req, res) {
